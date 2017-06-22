@@ -1,0 +1,20 @@
+<md-card [id]="'passengers-alert-component'" id="passengers-alert-component" [draggable]="true">
+  <md-list>
+    <md-divider></md-divider>
+    <div *ngFor="let passenger of passengerList">
+      <md-list-item (click)="handleRowClick(passenger)">
+        <img md-list-avatar="" class="passengers-alert-avatar" src="{{ passenger.avatarUrl }}" alt="">
+        <h2 class="passengers-alert-name" md-line="">{{ passenger.name }}</h2>
+        <h4 md-line="">From: {{ passenger.cityFrom }} To: {{ passenger.cityTo }}</h4>
+        <p md-line="">{{ passenger.message }}</p>
+        <cf-send-message 
+          [inputMessage]="passenger.message" 
+          [sendMessageMode]="getPassengerMessageMode(passenger)"
+          [settings]="getPassengerMessageSettings(passenger)"
+          [mini]="true"
+        ></cf-send-message>
+      </md-list-item>
+      <md-divider></md-divider>
+    </div>
+  </md-list>
+</md-card>
