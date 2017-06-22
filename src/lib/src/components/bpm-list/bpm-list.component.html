@@ -1,0 +1,27 @@
+<div #taskList class="wholeComponent" [ngStyle]="{'width':properties ? properties.width : '', 'height':properties ? properties.height : ''}">
+    <h4 *ngIf="items==null || items.length==0">No Tasks Available</h4>
+    <cf-list [properties]="myList">
+        <cf-item *ngFor="let item of items" details="true">   
+            <cf-icon md-list-avatar [properties]="item.priorityIcon" [styling]="item.priorityIconStyling"></cf-icon>
+            <div class="text">
+                <p class="subject">{{item.subject}}</p>
+                <p class="taskID">Work Item ID: {{item.workItemId}}</p>
+                <p class="date">Task Due Date:{{item.dueDate | date: 'dd/MM/yyyy'}}</p>
+            </div>
+            <div align="end" style="margin-left:auto; margin-right:30px;">
+                <div>
+                    <cf-icon [properties]="checkIcon" [styling]="checkIconStyling" [tooltip]="checkTooltip" (click)="acceptTask(it)"></cf-icon>
+                </div>
+                <div>
+                    <cf-icon [properties]="rejectIcon" [styling]="rejectIconStyling" [tooltip]="rejectTooltip" (click)="rejectTask(it)"></cf-icon>
+                </div>
+            </div>
+            <div details class="textDetails">
+                <p class="instanceName">Instance Name: {{item.instanceName}}</p>
+                <p class="team">Team: {{item.team.who}}</p>
+                <p class="taskStatus">Task Status: {{item.taskStatus}}</p>
+                <p class="instanceDate">Instance Due Date: {{item.instanceDueDate | date: 'dd/MM/yyyy'}}</p>
+            </div>
+        </cf-item> 
+    </cf-list>
+</div>

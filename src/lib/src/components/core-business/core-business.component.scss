@@ -1,0 +1,82 @@
+// @import 'cedrus-fusion/core.component.scss';
+.fill-space {
+    // use flexbox to fill the remaining space.
+    // all rows use a flexbox layout.
+    flex: 1 1 auto;
+}
+
+.row-right {
+    display: inline-block;
+}
+
+#settings {
+    padding: 10px;
+}
+
+.wholeComponent {
+    &.maximized-component {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    md-sidenav-container {
+        height: 100%;
+    }
+    &.collapsed-component {
+        height: auto !important;
+    }
+    .cf-core-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        .pages {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            &>div {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+cf-icon:hover {
+    cursor: pointer;
+}
+
+.settingsPage {
+    background-color: rgba(96, 125, 139, 0.9);
+    display: inline-block;
+}
+
+#settingsButton {
+    color: white;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.errorPage {
+    background-color: rgba(96, 125, 139, 0.9);
+    display: inline-block;
+}
+
+#errorSection {
+    color: white;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+.cf-component-sidenav {
+    padding: 20px;
+    background-color: #abe6ff;
+}
+
+/deep/ .whiteIcon {
+    color: white;
+}
+
+/deep/ .whiteButton {
+    color: white;
+}

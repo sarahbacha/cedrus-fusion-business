@@ -1,0 +1,23 @@
+<cf-core-business title="News" [properties]="toolbarProperties" (onRefresh)="changeChannel(settings.defaultChannel)" [(error)]="error">
+    <template #cfComponent>
+        <div class="wholeComponent">
+            <div *ngIf="settings.showChannelList==true" align="center">
+                <div id="channels" *ngFor="let set of imageSettings">
+                    <cf-image [cfClass]="getClass(set.selected)" [properties]="set.settings" [styling]="set.styles" (click)="changeChannel(set.source)"></cf-image>
+                </div>
+            </div>
+            <div id="list" [ngStyle]="{'width':settings.width, 'height':settings.height}">
+            <cf-list class="listComponent" [properties]="myList" (cfItemAction)="readMore($event)">
+                <cf-item *ngFor="let item of items">
+                        <img width="100px" height="80px;" [src]="item.image" alt="">
+                        <div class="text">
+                                <p class="title">{{item.title}}</p>
+                                <p class="date"> {{item.date| date: "dd/MM/yyyy" }}</p>
+                                <p class="details"> {{item.description}}</p>
+                        </div>
+                </cf-item>
+            </cf-list>
+    </div>
+    </div>
+    </template>
+</cf-core-business>

@@ -1,0 +1,96 @@
+@import '../core-business/core-business.component.scss';
+.wholeComponent {
+    overflow: hidden;
+    background-color: rgba(96, 125, 139, 0.9);
+}
+
+.listComponent {
+    font-family: 'Avenir', Helvetica, sans-serif;
+    /deep/ md-list-item {
+        border-bottom: 1px solid rgb(221, 221, 221);
+        &:first-child {
+            border-top: 1px solid rgb(221, 221, 221);
+        }
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+#channels {
+    display: inline-block;
+}
+
+cf-image {
+    padding-right: 10px;
+}
+
+/deep/ img.selected {
+    opacity: 1;
+}
+
+/deep/ img.not-selected {
+    opacity: 0.5;
+}
+
+cf-image:hover {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.date {
+    font-size: 8px;
+    color: #FBE9E7;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.details {
+    font-size: 11px;
+    color: #ECEFF1;
+    margin: 0px;
+}
+
+.row-right {
+    display: inline-block;
+}
+
+cf-select {
+    margin-left: 10px;
+}
+
+.text {
+    align-items: top;
+    margin-left: 4px;
+}
+
+.mat-list-item .mat-list-item-content {
+    align-items: top;
+}
+
+.mat-divider {
+    margin-top: 5px;
+}
+
+/deep/ .readMore {
+    font-size: 10px;
+}
+
+#list {
+    overflow-y: auto;
+}
+
+#list::-webkit-scrollbar {
+    display: none;
+}
+
+/deep/ .small-image {
+    width: 30px;
+    height: 30px;
+}

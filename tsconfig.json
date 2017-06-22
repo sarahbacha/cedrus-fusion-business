@@ -1,19 +1,31 @@
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "inlineSources": true,
-    "declaration": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "skipLibCheck": true,
-    "stripInternal": true,
-    "lib": [
-      "es2015",
-      "dom"
+// {
+  {
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "skipLibCheck": true,
+        "stripInternal": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "types": [
+            "node",
+            "moment"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "es2015",
+            "dom"
+        ]
+    },
+    "exclude": [
+        "node_modules"
     ]
-  }
 }

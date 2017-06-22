@@ -1,0 +1,101 @@
+@import '../core-business/core-business.component.scss';
+.wholeComponent {
+    overflow-y: auto;
+}
+
+.wholeComponent::-webkit-scrollbar {
+    display: none;
+}
+
+cf-input.url {
+    width: 70%;
+}
+
+.subject {
+    font-size: 14px;
+    color: #455A64;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.taskID {
+    margin: 0px;
+    color: #BDBDBD;
+    font-size: 10px;
+}
+
+.date {
+    font-size: 10px;
+    color: #EF5350;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.instanceName {
+    font-size: 12px;
+    color: #9E9E9E;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.team {
+    margin: 0px;
+    color: #BDBDBD;
+    font-size: 10px;
+}
+
+.taskStatus {
+    margin: 0px;
+    color: #BDBDBD;
+    font-size: 10px;
+}
+
+.instanceDate {
+    font-size: 10px;
+    color: #1E88E5;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+/deep/ md-list-item {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.text {
+    align-items: top;
+    margin-left: 2px;
+}
+
+.textDetails {
+    align-items: top;
+    margin-left: 42px;
+}
+
+.mat-list-item .mat-list-item-content {
+    align-items: top;
+}
+
+/deep/ .mat-subheader {
+    color: #455A64;
+    font-size: 18px;
+}
+
+/deep/ .high {
+    color:#FFD54F;
+}
+
+/deep/ .normal {
+    color:#E0E0E0;
+}
+
+/deep/ .highest {
+    color:#F44336;
+}
+
+/deep/ .checkIcon{
+    color:#009688;
+}
+
+/deep/ .rejectIcon{
+    color:#EF5350;
+}

@@ -1,0 +1,71 @@
+@import '../core-business/core-business.component.scss';
+.wholeComponent {
+    padding: 20px;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    background-color: rgba(96, 125, 139, 0.9);
+    width: 250px;
+    height: 180px;
+}
+
+.withTitle {
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    width: 250px;
+}
+
+.middle {
+    margin-left: 10px;
+}
+
+.input-chip {
+    padding: 8px 12px;
+    border-radius: 24px;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+cf-select.view {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+cf-input {
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+cf-standard-card {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+md-list {
+    width: 280px;
+}
+
+md-chip {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+@import '../../../../../node_modules/@angular/material/_theming.scss';
+@include mat-core();
+/deep/ .whiteTheme {
+    $primary: mat-palette($mat-grey, 0);
+    $accent: mat-palette($mat-amber, A200, A100, A400);
+    $theme: mat-light-theme($primary, $accent);
+    @include angular-material-theme($theme);
+}
+
+#settings {
+    color: white;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+/deep/ .mat-input-container {
+    font-family: 'Avenir', Helvetica, sans-serif;
+}

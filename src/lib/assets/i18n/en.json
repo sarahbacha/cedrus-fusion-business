@@ -1,0 +1,11 @@
+{
+    "customer": {
+       "form": {
+          "validate": "Validate",
+          "confirm": "Confirm",
+          "tooltip": {
+              "message": "My Tooltip"
+          }
+      }
+    }
+}

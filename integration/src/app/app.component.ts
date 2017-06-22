@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LibService } from 'quickstart-lib';
 
 @Component({
   selector: 'integration-app',

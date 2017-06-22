@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~/node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+/*@import '~cedrus-fusion/src/assets/custom-theme.scss';*/
+
+.redButton {
+    cf-icon2 {
+        font-size: 30px;
+        color: #607D8B;
+    }
+}
+
+cf-button2 {
+    label {
+        color: #FF5722;
+    }
+}

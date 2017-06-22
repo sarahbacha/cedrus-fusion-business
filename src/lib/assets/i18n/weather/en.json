@@ -1,0 +1,15 @@
+{
+    "weather": {
+        "title": "Weather Forecast",
+        "placeholder": "City Name",
+        "todayLabel": "Today"
+    },
+    "currency": {
+        "symbol" : "$",
+        "decimal" : ".",
+        "thousand": ".",
+        "precision": 2,
+        "format": "%s%v"
+    },
+    "dateFormat": "MM/DD/YYYY"
+}

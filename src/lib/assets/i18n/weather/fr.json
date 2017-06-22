@@ -1,0 +1,15 @@
+{
+    "weather": {
+        "title": "Prévision météo",
+        "placeholder": "Nom de la ville",
+        "todayLabel": "Aujourd'hui"
+    },
+    "currency": {
+        "symbol" : "€",
+        "decimal" : ",",
+        "thousand": " ",
+        "precision": 2,
+        "format": "%v%s"
+    },
+    "dateFormat": "DD/MM/YYYY"
+}

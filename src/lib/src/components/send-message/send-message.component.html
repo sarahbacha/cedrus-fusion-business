@@ -1,0 +1,44 @@
+<div *ngIf="!mini">
+  <form #f="ngForm" (ngSubmit)="handleSubmit(f)" *ngIf="this.expanded">
+    <md-input-container class="cf-send-message-input">
+      <input type="text" 
+        *ngIf="!this.inputMessage"
+        name="message" 
+        ngModel="" 
+        mdInput=""
+        placeholder="Enter your message..."
+        required="true">
+    </md-input-container>
+    <button class="cf-send-message-sms-button"
+      md-fab=""
+      *ngIf="shouldShowIconButton('SMS')"
+      type="submit"
+      (click)="setAnySMS()"
+      [disabled]="!f.valid">
+      <md-icon>message</md-icon>
+    </button>
+    <button class="cf-send-message-email-button" 
+      md-fab=""
+      *ngIf="shouldShowIconButton('EMAIL')"
+      type="submit"
+      (click)="setAnyEmail()"
+      [disabled]="!f.valid">
+      <md-icon>email</md-icon>
+    </button>
+    <button md-fab="" (click)="toggleExpanded()">
+      <md-icon>clear</md-icon>
+    </button>
+  </form>
+  <button md-fab="" *ngIf="!this.expanded" (click)="toggleExpanded()">
+    <md-icon>create</md-icon>
+  </button>
+</div>
+
+<div *ngIf="mini">
+  <button md-mini-fab="" (click)="handleMiniFabClick()" *ngIf="!messageSent">
+    <md-icon>{{ sendMessageMode === 0 ? 'message' : sendMessageMode === 1 ? 'email' : 'create' }}</md-icon>
+  </button>
+  <button md-mini-fab="" [disabled]="true" *ngIf="messageSent">
+    <md-icon>check</md-icon>
+  </button>
+</div>
