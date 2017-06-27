@@ -11,12 +11,12 @@ import { BpmTaskListModel } from '../../../src/lib';
 export class AppComponent {
 	
 	//WEATHER COMPONENT
-  // demoWeather = new WeatherComponentModel ({
-	// 	defaultCity:"Paris"
-	// });
+  demoWeather = new WeatherComponentModel ({
+		defaultCity:"Paris"
+	});
   
-  // compEvents: string= "";
-  // log(ev): void { this.compEvents = ev; }
+  compEvents: string= "";
+  log(ev): void { this.compEvents = ev; }
 
 
   //NEWS COMPONENT

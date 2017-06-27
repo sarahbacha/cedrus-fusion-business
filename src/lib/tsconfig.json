@@ -15,8 +15,8 @@
         "annotateForClosureCompiler": true,
         "strictMetadataEmit": true,
         "skipTemplateCodegen": true,
-        "flatModuleOutFile": "cedrus-fusion.js",
-        "flatModuleId": "cedrus-fusion",
+        "flatModuleOutFile": "cedrus-fusion-business.js",
+        "flatModuleId": "cedrus-fusion-business",
         "genDir": "../../out-tsc/lib-gen-dir/"
     }
 }

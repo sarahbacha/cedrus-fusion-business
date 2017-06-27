@@ -1,8 +1,10 @@
 import { Component, OnInit, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { CfCoreBusinessComponent } from '../core-business/core-business.component';
-import { NewsCardModel, NewsService, MapModelsService, SelectModel, ListModel, ButtonModel, IconModel, ImageModel, ImageStylingModel, ToolbarModel  } from 'cedrus-fusion';
+import { NewsCardModel, MapModelsService, SelectModel, ListModel, ButtonModel, IconModel, ImageModel, ImageStylingModel, ToolbarModel  } from 'cedrus-fusion';
 import { MappingModel } from '../../models/mapping.model';
 import { NewsComponentModel } from '../../models/news-component.model';
+
+import { NewsService } from '../../services/news.service';
 
 /**
  * <p>The news is created based on the news Card class (see <b>/models/card</b>).</p>
