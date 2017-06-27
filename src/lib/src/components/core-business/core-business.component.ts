@@ -8,7 +8,7 @@ import { CoreBusinessStylingModel } from '../../models/core-business/core-busine
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'cf-core-business2',
+  selector: 'cf-core-business',
   templateUrl: './core-business.component.html',
   styleUrls: ['./core-business.component.scss']
 })

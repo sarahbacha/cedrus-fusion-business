@@ -1,4 +1,3 @@
-@import '../core-business/core-business.component.scss';
 .wholeComponent {
     overflow-y: auto;
 }
@@ -81,21 +80,21 @@ cf-input.url {
 }
 
 /deep/ .high {
-    color:#FFD54F;
+    color: #FFD54F;
 }
 
 /deep/ .normal {
-    color:#E0E0E0;
+    color: #E0E0E0;
 }
 
 /deep/ .highest {
-    color:#F44336;
+    color: #F44336;
 }
 
-/deep/ .checkIcon{
-    color:#009688;
+/deep/ .checkIcon {
+    color: #009688;
 }
 
-/deep/ .rejectIcon{
-    color:#EF5350;
+/deep/ .rejectIcon {
+    color: #EF5350;
 }

@@ -1,4 +1,4 @@
-<cf-core-business2 [title]="title" [properties]="toolbarProperties" (updateSettings)="updateCity()" (onRefresh)="updateCity()" [(error)]="error">
+<cf-core-business [title]="title" [properties]="toolbarProperties" (updateSettings)="updateCity()" (onRefresh)="updateCity()" [(error)]="error">
     <template #cfComponent>
         <div #weather class="wholeComponent" (dblclick)="doubleClick()" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
             <div>
@@ -49,4 +49,4 @@
             <cf-input [properties]="cityInput" [themeClass]="themeClass"></cf-input>
         </div>
     </template>
-</cf-core-business2>
+</cf-core-business>
