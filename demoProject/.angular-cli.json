@@ -49,6 +49,9 @@
         }
     },
     "defaults": {
+        "serve": {
+            "port": 4400
+        },
         "styleExt": "css",
         "component": {}
     }

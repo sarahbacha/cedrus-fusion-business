@@ -8,11 +8,12 @@
     display: inline-block;
 }
 
-#settings {
-    padding: 10px;
+.settings {
+    padding: 0px 20px;
 }
 
 .wholeComponent {
+    background-color: rgba(96, 125, 139, 0.9);
     &.maximized-component {
         width: 100% !important;
         height: 100% !important;
@@ -48,6 +49,10 @@ cf-icon:hover {
 .settingsPage {
     background-color: rgba(96, 125, 139, 0.9);
     display: inline-block;
+}
+
+.mainPage {
+    background-color: rgba(96, 125, 139, 0.9);
 }
 
 #settingsButton {
