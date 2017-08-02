@@ -8,7 +8,7 @@
             </div>
             <div id="list" [ngStyle]="{'width':settings.width, 'height':settings.height}">
             <cf-list class="listComponent" [properties]="myList" (cfItemAction)="readMore($event)">
-                <cf-item *ngFor="let item of items">
+                <cf-item *ngFor="let item of items" [styling]="itemStyling">
                         <img width="100px" height="80px;" [src]="item.image" alt="">
                         <div class="text">
                                 <p class="title">{{item.title}}</p>

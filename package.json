@@ -1,6 +1,6 @@
 {
     "name": "cedrus-fusion-business",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
     "main": "./bundles/cedrus-fusion-business.umd.js",
     "module": "./cedrus-fusion-business.es5.js",

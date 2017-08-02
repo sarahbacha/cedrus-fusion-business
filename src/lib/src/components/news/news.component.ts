@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { CfCoreBusinessComponent } from '../core-business/core-business.component';
-import { NewsCardModel, MapModelsService, SelectModel, ListModel, ButtonModel, IconModel, ImageModel, ImageStylingModel, ToolbarModel  } from 'cedrus-fusion';
+import { NewsCardModel, MapModelsService, SelectModel, ListModel, ButtonModel, IconModel, ImageModel, ImageStylingModel, ToolbarModel, ItemStylingModel  } from 'cedrus-fusion';
 import { MappingModel } from '../../models/mapping.model';
 import { NewsComponentModel } from '../../models/news-component.model';
 
@@ -177,4 +177,13 @@ export class CfNewsComponent extends CfCoreBusinessComponent implements OnInit {
     else
       return "not-selected";
   }
+
+  itemStyling = new ItemStylingModel ({
+		item: {
+			class:"myitem"
+		},
+		selectedItem: {
+			class:"myselectedItem"
+		}
+	});
 }

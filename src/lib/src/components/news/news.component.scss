@@ -93,3 +93,11 @@ cf-select {
     width: 30px;
     height: 30px;
 }
+
+/deep/ .myitem {
+    background-color: rgba(96, 125, 139, 0.9);
+}
+
+/deep/ .myselectedItem {
+    background-color: rgba(96, 125, 139, 0.9);
+}
